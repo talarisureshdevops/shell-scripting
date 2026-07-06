@@ -2,7 +2,7 @@
 
 echo "Please enter the value here::"
 read num
-if [ $((num % 2)) -eg 0 ]; then
+if [ $((num % 2)) -eq 0 ]; then
    echo "Even"
 else
    echo "odd"
