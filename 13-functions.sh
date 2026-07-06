@@ -12,6 +12,7 @@ VALIDATE() {
        exit 1
     else
        echo "$2............SUCCESS"
+    fi
 }
 
 dnf install nginx -y
