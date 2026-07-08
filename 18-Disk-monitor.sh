@@ -18,5 +18,5 @@ if [ "$usage" -ge "$threshold" ]; then
 fi
 echo
 #echo "log_file : $LOGFILE"
-echo "Log File : $LOGFILE"
+# echo "Log File : $LOGFILE"
 done
