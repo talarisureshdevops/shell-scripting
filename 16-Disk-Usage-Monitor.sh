@@ -6,7 +6,7 @@ do
 usage=$(echo "$output" | awk '{print $1}' | cut -d'%' -f1)
 partition=$(echo "$output" | awk '{print $2}')
 
-if [ $usage -ge threshold ]; then
+if [ "$usage" -ge "$threshold" ]; then
    echo "warning $partition is ${usage} % full"
 fi
 done
