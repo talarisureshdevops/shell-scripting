@@ -13,8 +13,8 @@ usage=${usage%\%}
 if [ "$usage" -ge "$threshold" ]; then 
    echo "[Warning] $parition is ${usage}% full"
    echo "$(date): warning $partition is ${usage}% full" >>$LOGFILE
-else
-   echo "[OK] $partition is ${usage}% used"
+# else
+#    echo "[OK] $partition is ${usage}% used"
 fi
 echo
 #echo "log_file : $LOGFILE"
