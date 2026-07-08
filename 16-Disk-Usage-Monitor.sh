@@ -1,5 +1,5 @@
 #!/bin/bash
-threshold=80
+threshold=50
 
 df -h | awk 'NR>1 {print $5,$6}' | while read output
 do
