@@ -17,4 +17,5 @@ else
    echo "[OK] $partition is ${usage}% used"
 fi
 echo
-echo "log_file: $LOGFILE"
+#echo "log_file : $LOGFILE"
+echo "Log File : $LOGFILE"
