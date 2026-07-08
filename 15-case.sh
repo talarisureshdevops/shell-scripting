@@ -11,3 +11,5 @@ case "$fruits" in
     *)
        echo "unknown fruit";;
     esac
+
+    
