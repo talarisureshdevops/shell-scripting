@@ -6,7 +6,7 @@ echo
 echo "==============================================="
 echo "Disk Usage Monitoring Report"
 echo "Date : $(date)"
-df -h | aws "NR>1 {print $5,$6}" | while read usage partition
+df -h | awk "NR>1 {print $5,$6}" | while read usage partition
 do
 
 usage=${usage%\%}
