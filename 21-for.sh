@@ -1,8 +1,9 @@
 #!/bin/bash
-count=1
-while [ $count -lt 5 ];
+
+for i in suresh ramesh gopi madhu balu
 do 
-echo $count
-count=$((count +1))
+echo $i 
 done 
+
+
 
