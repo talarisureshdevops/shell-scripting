@@ -2,5 +2,5 @@
 
 for i in 101 102 103 104 105
 do 
-echo "EMP" && $i 
+echo "EMP$i"
 done 
