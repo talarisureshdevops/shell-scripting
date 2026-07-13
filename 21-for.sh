@@ -1,6 +1,7 @@
 #!/bin/bash
-for i in 1 2 3 4 5
-do
+
+for i in suresh ramesh balu
+do 
 echo $i 
-done
+done 
 
