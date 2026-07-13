@@ -1,7 +1,8 @@
 #!/bin/bash
-
-for i in suresh ramesh balu
+count =1
+while [ $count -lt 5 ];
 do 
-echo $i 
-done 
+echo $count
+count=$((count +1))
+do
 
