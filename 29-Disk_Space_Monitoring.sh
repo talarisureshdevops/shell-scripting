@@ -16,10 +16,10 @@ do
 usage=${usage%\%}
 
 if [ $usage -ge $threshold ]; then
-   echo "$R the partiton of disk is: $partition and usage is: $usage full"
+   echo -e "$R the partiton of disk is: $partition and usage is: $usage full"
    
 else
-   echo "$G the partiton of disk is: $partition and usage is: $usage normal"
+   echo -e "$G the partiton of disk is: $partition and usage is: $usage normal"
 fi
 done
 
