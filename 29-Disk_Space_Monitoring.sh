@@ -22,5 +22,5 @@ fi
 done
 
 echo "========================================================="
-echo " The usage monitor disk is completed 
+echo " The usage monitor disk is completed"
 echo "========================================================="
