@@ -7,7 +7,7 @@
 # Designation: Devops Engineer
 ######################################################
 
-threshold= 80
+threshold=80
 
 df -h | awk 'NR>1 {print $5,$6}' while read usage partition
 do 
