@@ -9,7 +9,7 @@
 
 threshold=80
 
-df -h | awk 'NR>1 {print $5,$6}' while read usage partition
+df -h | awk 'NR>1 {print $5,$6}' | while read usage partition
 do 
 usage=$(usage%/%)
 
