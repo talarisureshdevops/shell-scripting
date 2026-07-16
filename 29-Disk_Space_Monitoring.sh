@@ -11,7 +11,7 @@ threshold=80
 
 df -h | awk 'NR>1 {print $5,$6}' | while read usage partition
 do 
-usage=$(usage%/%)
+usage=${usage%\%}
 
 if [ $usage -gt $threshold ]; then
    echo "the partiton of disk is: $partition and usage is: $usage full"
