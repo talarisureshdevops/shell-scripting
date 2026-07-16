@@ -13,9 +13,9 @@ df -h | awk 'NR>1 {print $5,$6}' | while read usage partition
 do 
 usage=${usage%\%}
 
-if [ $usage -gt $threshold ]; then
+if [ $usage -ge $threshold ]; then
    echo "the partiton of disk is: $partition and usage is: $usage full"
-   exit 1
+   
 else
    echo "the partiton of disk is: $partition and usage is: $usage normal"
 fi
