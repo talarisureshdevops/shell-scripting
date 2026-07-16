@@ -106,11 +106,20 @@ Please investigate the server immediately.
 </html>
 EOF
 
+# s-nail \
+# -a "Content-Type: text/html" \
+# -s "CPU ALERT : $HOSTNAME" \
+# "$EMAIL" < /tmp/cpu_alert.html
 s-nail \
--a "Content-Type: text/html" \
--s "CPU ALERT : $HOSTNAME" \
+-S mta=smtp://smtp.gmail.com:587 \
+-S smtp-use-starttls \
+-S smtp-auth=login \
+-S smtp-auth-user="mailtosuresh.bi@gmail.com" \
+-S smtp-auth-password="mnleitjuceybabab" \
+-S from="mailtosuresh.bi@gmail.com" \
+-S content_type=text/html \
+-s "🚨 CPU ALERT : $HOSTNAME" \
 "$EMAIL" < /tmp/cpu_alert.html
-
 else
 
 echo -e "${G}CPU Utilization Normal : ${CPU}%${NC}"
@@ -118,3 +127,4 @@ echo -e "${G}CPU Utilization Normal : ${CPU}%${NC}"
 fi
 
 echo "CPU Monitoring Completed."
+
