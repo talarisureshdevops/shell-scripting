@@ -106,7 +106,7 @@ Please investigate the server immediately.
 </html>
 EOF
 
-mailx \
+s-nail \
 -a "Content-Type: text/html" \
 -s "CPU ALERT : $HOSTNAME" \
 "$EMAIL" < /tmp/cpu_alert.html
