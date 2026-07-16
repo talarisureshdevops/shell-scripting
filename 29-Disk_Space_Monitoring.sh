@@ -6,6 +6,8 @@
 # Author: Suresh
 # Designation: Devops Engineer
 ######################################################
+R='\033[0;31m'
+G='\033[0;32m'
 
 threshold=80
 
@@ -14,10 +16,10 @@ do
 usage=${usage%\%}
 
 if [ $usage -ge $threshold ]; then
-   echo "the partiton of disk is: $partition and usage is: $usage full"
+   echo "$R the partiton of disk is: $partition and usage is: $usage full"
    
 else
-   echo "the partiton of disk is: $partition and usage is: $usage normal"
+   echo "$G the partiton of disk is: $partition and usage is: $usage normal"
 fi
 done
 
