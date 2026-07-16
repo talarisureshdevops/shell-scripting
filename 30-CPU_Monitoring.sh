@@ -17,7 +17,7 @@ CPU=$(printf "%.0f" "$CPU")
 
 echo  "$CPU"
 
-if [ $CPU -ge $ threshold ]; then 
+if [ $CPU -ge $threshold ]; then 
    echo -e "$R the cpu utilizations is full : $CPU"
 else
    echo -e "$G the cpu utilization is normal : $CPU"
